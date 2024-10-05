@@ -1,0 +1,95 @@
+<!--<?php 
+    //Template name: Modelo páginas de Notícias 2 TESTE
+?>
+
+<?php get_header(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+    <section class="s-hero-interna">
+        <div class="overlay">
+        <div class="container">
+            <div class="text">
+                <p class="intro-1">Fique por dentro das novidades</p>
+                <h2>Notícias</h2>
+                <div class="icon">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/arrow-small-down.svg" alt="icone-linhas-de-crédito">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <section class="s-blog-interna">
+          <div class="container">
+            <div class="mecanismos-buscar">
+                <div class="elemento-de-busca">
+                    <h4>Buscar</h4>
+                    <div class="busca">
+                        <input class="search" type="text" id="search-input" placeholder="O que você procura?">
+                        <button class="search-button" id="search-button"><i class="fa-solid fa-magnifying-glass" style="color: #0066ff; "></i></button>
+                        <ul id="search-results"></ul>
+                    </div>
+                </div>
+                <div class="filtro-busca">
+                        <h4>Categoria</h4>
+                    <ul id="seletorCategoria">
+                        <li class="filter-button">
+                            <button class="btn-filtro">Todos</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Notícias</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Juro Zero</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">MEI</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Microempreendedor Individual</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Eventos</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Sem categoria</button>
+                        </li>
+                        <li class="filter-button">
+                            <button class="btn-filtro">Empreendedorismo</button>
+                        </li>
+                    </ul>
+                </div>
+                <?php get_sidebar(); ?>
+
+            </div>
+            <div class="conteudo-de-noticias">
+                <div class="topo-blog">
+                    <p id="postCount">Resultados encontrados: <span id="resultado">0</span></p>
+                    <form class="btn-data" action="" method="get" id="order-form">
+                        <label for="order">Ordenar por:</label>
+                        <select name="order" id="order">
+                            <option value="desc">Mais recentes</option>
+                            <option value="asc">Mais antigas</option>
+                        </select>
+                    </form>
+                </div>
+                    <ul class="lista-posts">
+                        
+                    
+                    <?php echo do_shortcode('[ajax_load_more container_type="ul" post_type="post" posts_per_page="284" scroll="false" transition_container="false" button_label="Carregar mais" button_loading_label="Carregando Posts" button_done_label="Nada encontrado"]') ?>
+
+                    </ul>
+            </div>
+        </div>
+       
+        </div>
+    </section>
+    
+    <?php include(TEMPLATEPATH .'/includes/session-faca-uma-simulacao.php') ?>
+    
+    <?php endwhile; else: endif; ?>
+
+<?php get_footer() ?>-->

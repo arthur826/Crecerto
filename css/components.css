@@ -1,0 +1,28 @@
+/* line 2, ../../CRECERTO/scss/components.scss */
+.primary-title {
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 112%;
+  /* or 45px */
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  margin-top: 1.4rem;
+}
+
+/* line 14, ../../CRECERTO/scss/components.scss */
+.sub-titulo {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font: 600 0.938rem/16px "Exo";
+  background-image: -o-linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);
+  background-image: linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=components.css.map */

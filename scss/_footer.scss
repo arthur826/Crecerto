@@ -1,0 +1,233 @@
+footer {
+    padding-top: 3rem;
+    background-color: $primary;
+    .container {
+        .top-footer {
+            @include flex (row, center, space-between);
+            border-bottom: 1px solid rgba(73, 196, 253, 0.2);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+            .social {
+                @include flex (row, center, space-between);
+                span {
+                    font-family: $secondary-font;
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    text-align: right;
+                    color: #FFFFFF;
+                    opacity: 0.7;
+                    margin-right: 3rem;
+                }
+                ul {
+                    @include flex (row, center, center);
+                    a {
+                        opacity: 0.8;
+                        &:hover {
+                            opacity: 1;
+                        }
+                        &:not(:last-child) {
+                            margin-right: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .main-footer {
+            @include flex (row, flex-start, space-between);
+            border-bottom: 1px solid rgba(73, 196, 253, 0.2);
+            padding-bottom: 4rem;
+            margin-bottom: 2rem;
+            nav {
+                @include flex (row, flex-start, space-between);
+                width: 100%;
+                max-width: 85.5rem;
+                .item {
+                    strong {
+                        font-family: $secondary-font;
+                        font-weight: 600;
+                        font-size: 1.3rem;
+                        line-height: 5rem;
+                        color: $secondary;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                }
+                ul {
+                    margin-bottom: 1.6rem;
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 2rem;
+                        }
+                        &:first-child {
+                            margin-top: 2rem;
+                        }
+                        a {
+                            font-family: $secondary-font;
+                            font-size: 1.4rem;
+                            line-height: 1.8rem;
+                            color: #FFFFFF;
+                            opacity: 0.67;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+            .selo-ods {
+                text-align: center;
+            }
+            }
+        }
+        .contact {
+            width: 100%;
+            max-width: 28rem;
+            a {
+                &:hover {
+                    background-color: rgba(1, 33, 83, 0.7);
+                }
+                &:not(:last-child) {
+                    margin-bottom: 2.4rem;
+                }
+                @include flex (row, center, flex-start);
+                padding: 1.7rem 2.3rem;
+                background-color: rgba(1, 33, 83, 0.4);
+                border-radius: 6px;
+                .info {
+                    strong {
+                        font-weight: 600;
+                    }
+                    margin-left: 2.4rem;
+                    font-family: $primary-font,
+                    sans-serif;
+                    font-size: 1.4rem;
+                    line-height: 150%;
+                    color: $secondary;
+                    p {
+                        color: #ffffff;
+                        opacity: 0.85;
+                        font-size: 1.4rem;
+                        span {
+                            color: $secondary;
+                            font-weight: 900;
+                            font-size: 2.2rem;
+                            line-height: 3rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .msg {
+        border-bottom: 4px solid $yellow;
+        padding-bottom: 2rem;
+        @include flex (row, center, space-between);
+        width: 100%;
+        p {
+            width: 100%;
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 150%;
+            color: #FFFFFF;
+            opacity: 0.8;
+        }
+        .cnpj-info {
+            text-align: left;
+        }
+
+        .copyright {
+            text-align: right;
+        }
+    }
+    @include responsive (600px) {
+        .container {
+            .top-footer {
+                .logo-rodape {
+                    margin-bottom: 2rem;
+                }
+            }
+            .main-footer {
+                flex-direction: column;
+                nav {
+                    margin-bottom: 1rem;
+                    flex-wrap: wrap;
+                    .item {
+                        width: 50%;
+                        margin-bottom: 3rem;
+                    }
+                }
+                .contact {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: inherit;
+                    a {
+                        &:not(:last-child) {
+                            margin-right: 2.4rem;
+                            margin-bottom: inherit;
+                        }
+                    }
+                }
+            }
+            .msg {
+                @include flex (column, center, center);
+                .cnpj-info {
+                    margin-bottom: 1.6rem;
+                }
+            }
+        }
+    }
+    @include responsive (480px) {
+        .container {
+            .top-footer {
+                flex-direction: column;
+                .logo-rodape {
+                    width: 100%;
+                    max-width: 15rem;
+                    margin-bottom: 2rem;
+                }
+                .social {
+                    ul {
+                        li {
+                            width: 100%;
+                            max-width: 2.5rem;
+                        }
+                    }
+                }
+            }
+            .main-footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                nav {
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 100%;
+                    .item {
+                        width: 100%;
+                    }
+                }
+                .contact {
+                    a {
+                        flex-direction: column;
+                        &:not(:last-child) {
+                            margin-bottom: 1rem;
+                            margin-right: 0;
+                        }
+                        .icon {
+                            margin-bottom: 0.8rem;
+                        }
+                        .info {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .msg {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

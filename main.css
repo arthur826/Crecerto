@@ -1,0 +1,1673 @@
+@charset "UTF-8";
+/* line 1, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 12, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'Exo', sans-serif;
+  letter-spacing: -0.5px;
+  font-style: normal;
+}
+
+/* line 18, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 112%;
+}
+
+/* line 24, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+h3 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 120%;
+}
+
+/* line 32, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+h4 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  color: #323841;
+}
+
+/* line 39, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #323841;
+}
+
+/* line 46, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #70738A;
+}
+
+/* line 54, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 58, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1280px) {
+  /* line 58, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_reset.scss */
+  html {
+    font-size: 55%;
+  }
+}
+
+/* line 11, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_variables.scss */
+.bg-white {
+  background-color: #fff;
+}
+
+/* line 15, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_variables.scss */
+.bg-gray {
+  background-color: #f7f7f7;
+}
+
+/* line 1, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_grid.scss */
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* line 1, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  transition: all 0.3s;
+}
+
+/* line 11, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 14, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header .container .logo {
+  width: 100%;
+  max-width: 13rem;
+  height: auto;
+}
+
+/* line 20, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header.fixed-menu {
+  height: 7rem;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.93);
+}
+
+/* line 25, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header.fixed-menu .container .logo {
+  max-width: 10rem;
+}
+
+/* line 32, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header.fixed-menu .container nav ul li a span {
+  color: #70738A;
+}
+
+/* line 42, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav {
+  position: relative;
+}
+
+/* line 44, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav ul {
+  display: flex;
+}
+
+/* line 46, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* line 49, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav ul li:not(:first-child) {
+  margin-left: 5.6rem;
+}
+
+/* line 53, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav ul a {
+  display: flex;
+  align-items: center;
+}
+
+/* line 56, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav ul a span {
+  font-size: 1.4rem;
+  margin-left: 1.4rem;
+  line-height: 1.8rem;
+  color: #fff;
+  margin-right: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* line 67, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown {
+  position: absolute;
+  top: 75px;
+  left: -100px;
+  width: 100%;
+  max-width: 35rem;
+  background: #ffffff;
+  border-radius: 6px;
+  opacity: 0;
+  transition: all .3s;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+/* line 79, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown:after {
+  content: "";
+  width: 18rem;
+  height: 5px;
+  background: #49C5FD;
+  border-radius: 12px 12px 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 88, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+/* line 95, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown a .item:not(:last-child) {
+  margin-bottom: 2.8rem;
+  padding-bottom: 20rem;
+}
+
+/* line 99, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown a .item strong {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #5f5c6b;
+  display: block;
+  padding: 2rem 4rem;
+}
+
+/* line 106, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown a .item strong:not(:last-child) {
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* line 109, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_header.scss */
+header nav .dropdown a .item strong:hover {
+  transition: 0.3s;
+  background-color: #70738A;
+  color: #fff;
+}
+
+/* line 2, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0 3rem;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 4.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 0 0 0 rgba(230, 102, 75, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* line 40, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-primary {
+  border: none;
+  background: #39C76C;
+  /* fallback for old browsers */
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* line 45, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-primary:hover {
+  background-color: #238b49;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+/* line 57, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-primary.white {
+  border: 1px solid transparent;
+  color: #000;
+  background-color: white;
+}
+
+/* line 61, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-primary.white:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid white;
+}
+
+/* line 71, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-secondary {
+  border: 1px solid #012D72;
+  background-color: transparent;
+  color: #012D72;
+  transition: all .3s;
+}
+
+/* line 76, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-secondary:hover {
+  border: 1px solid transparent;
+  background-color: #ff9539;
+  color: #fff;
+}
+
+/* line 81, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-secondary.white {
+  border: 1px solid white;
+  color: white;
+}
+
+/* line 84, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_buttons.scss */
+.btn-secondary.white:hover {
+  background-color: white;
+  color: #ff9539;
+}
+
+/* line 2, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_components.scss */
+.primary-title {
+  font-family: 'Exo', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 112%;
+  /* or 45px */
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  margin-top: 1.4rem;
+}
+
+/* line 14, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_components.scss */
+.sub-titulo {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font: 600 0.938rem/16px "Exo";
+  background-image: -o-linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);
+  background-image: linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.4rem;
+}
+
+/* line 1, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer {
+  padding-top: 4.9rem;
+  background-color: #323841;
+}
+
+/* line 5, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .top-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+  padding-bottom: 4.8rem;
+  margin-bottom: 5.7rem;
+}
+
+/* line 10, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .top-footer .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 12, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .top-footer .social span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-right: 3rem;
+}
+
+/* line 21, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .top-footer .social ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 24, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .top-footer .social ul a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+/* line 31, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+  padding-bottom: 6rem;
+  margin-bottom: 3.9rem;
+}
+
+/* line 36, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 85.5rem;
+}
+
+/* line 41, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer nav .item strong {
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  color: #FFFFFF;
+}
+
+/* line 51, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer nav ul li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* line 54, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer nav ul li:first-child {
+  margin-top: 2.1rem;
+}
+
+/* line 57, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .main-footer nav ul li a {
+  font-family: "Open Sans", sans serif;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  color: #FFFFFF;
+  opacity: 0.67;
+}
+
+/* line 69, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact {
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* line 72, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.7rem 2.3rem;
+  background: rgba(0, 165, 240, 0.23);
+  border-radius: 6px;
+}
+
+/* line 73, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact a:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+/* line 80, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact a .info {
+  margin-left: 2.4rem;
+  font-family: "Exo", sans-serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+/* line 81, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact a .info strong {
+  font-weight: 600;
+}
+
+/* line 89, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .container .contact a .info p {
+  color: #f2f2f2;
+  opacity: 0.67;
+}
+
+/* line 97, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .msg {
+  border-bottom: 4px solid #ff9539;
+  padding-bottom: 3.8rem;
+}
+
+/* line 101, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_footer.scss */
+footer .msg p {
+  width: 100%;
+  max-width: 66rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+/* line 1, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero {
+  border-top: 2px solid #23cbcb;
+  border-bottom: 5px solid #23cbcb;
+  padding-top: 7rem;
+  background: linear-gradient(102.53deg, #012D72 13.3%, #202889 47.04%, #23cbcb 124.98%);
+  height: 70rem;
+}
+
+/* line 14, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 17, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text {
+  width: 100%;
+  max-width: 58.5rem;
+  margin-top: 12rem;
+}
+
+/* line 22, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+/* line 29, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text h1 {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+/* line 36, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #fff;
+  max-width: 58.5rem;
+  margin-bottom: 4.5rem;
+}
+
+/* line 44, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text span {
+  background-color: #006D8F;
+  padding: 0.4rem 1rem;
+  border-radius: 12rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+}
+
+/* line 51, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero .text .intro-1 {
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 1.4rem;
+}
+
+/* line 58, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas {
+  margin-top: -70px;
+}
+
+/* line 60, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 62, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas .container .box-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 107.2rem;
+  height: 14rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* line 70, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas .container .box-info .box-info-individual {
+  width: 100%;
+  max-width: 30rem;
+  padding-right: 10px;
+}
+
+/* line 74, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas .container .box-info .box-info-individual:not(:last-child) {
+  border-right: 1px solid #f2f2f2;
+}
+
+/* line 77, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-estatisticas .container .box-info .box-info-individual h3 {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 120%;
+}
+
+/* line 89, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional {
+  padding-top: 7rem;
+}
+
+/* line 91, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 93, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .video-institucional {
+  position: relative;
+  background-color: #006D8F;
+  width: 100%;
+  max-width: 60rem;
+  height: 40rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* line 101, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .video-institucional .play {
+  background: url(/img/video-thumb.png) no-repeat;
+  max-width: 100%;
+  width: 60rem;
+  height: 40rem;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* line 119, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .video-institucional .play .player {
+  background: url(/img/play.svg) no-repeat;
+  background-size: cover;
+  width: 72px;
+  height: 72px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 130, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .video-institucional .play .player:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 139, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .video-institucional .play:after {
+  content: "vídeo institucional";
+  position: absolute;
+  bottom: 120px;
+  font-family: barlow;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+}
+
+/* line 155, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .texto-institucional {
+  padding-bottom: 7rem;
+}
+
+/* line 158, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .texto-institucional .text {
+  width: 100%;
+  max-width: 55rem;
+  margin-bottom: 2.8rem;
+}
+
+/* line 162, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-institucional .container .texto-institucional .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #627185;
+  margin-bottom: 2.4rem;
+}
+
+/* line 175, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes {
+  background: linear-gradient(102.53deg, #012d72 13.3%, #202889 47.04%, #23cbcb 124.98%);
+}
+
+/* line 177, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 182, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+/* line 186, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li {
+  max-width: 38.5rem;
+  height: 25rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  padding: 3.5rem;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+/* line 198, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li .icon {
+  margin-bottom: 1.5rem;
+}
+
+/* line 200, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li .icon img {
+  border-bottom: 2px solid #ff9539;
+  padding-bottom: 1.6rem;
+}
+
+/* line 205, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li h4 {
+  margin-bottom: 1.5rem;
+}
+
+/* line 208, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li p {
+  line-height: 150%;
+  font-size: 1.6rem;
+  color: #70738A;
+}
+
+/* line 214, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul li:hover {
+  background-color: #f2f2f2;
+  transition: all .3s;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+/* line 224, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial {
+  background-color: transparent;
+  padding: inherit;
+}
+
+/* line 227, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial:hover {
+  background-color: inherit;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  cursor: default;
+}
+
+/* line 235, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial .icon img {
+  color: white;
+}
+
+/* line 239, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial h4 {
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 120%;
+  color: white;
+}
+
+/* line 244, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial h4 span {
+  font-weight: 700;
+}
+
+/* line 248, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-inicial p {
+  color: white;
+  font-size: 2rem;
+}
+
+/* line 254, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final {
+  text-align: center;
+  background-color: #ff9539;
+}
+
+/* line 257, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final:hover {
+  background-color: #ff9539;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  cursor: default;
+}
+
+/* line 264, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final .icon {
+  display: none;
+}
+
+/* line 267, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final h4 {
+  line-height: 120%;
+  color: white;
+}
+
+/* line 270, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final h4 span {
+  font-weight: 500;
+}
+
+/* line 274, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .cards-solucoes ul .card-final p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* line 282, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucoes .container .image img {
+  position: relative;
+  top: -16.8rem;
+}
+
+/* line 290, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-encontre-a-crecerto .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* line 294, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-encontre-a-crecerto .container .imagem-mapa {
+  width: 100%;
+  max-width: 60rem;
+}
+
+/* line 298, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-encontre-a-crecerto .container .texto-onde-estamos {
+  width: 100%;
+  max-width: 50rem;
+}
+
+/* line 301, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-encontre-a-crecerto .container .texto-onde-estamos .text {
+  margin-bottom: 3rem;
+}
+
+/* line 307, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram {
+  background: linear-gradient(102.53deg, #012D72 13.3%, #202889 47.04%, #23cbcb 124.98%);
+}
+
+/* line 309, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 312, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .titulo-link {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 316, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .titulo-link .titulo {
+  max-width: 90rem;
+  color: white;
+}
+
+/* line 320, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .titulo-link p {
+  color: white;
+}
+
+/* line 324, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 327, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias li {
+  width: 100%;
+  max-width: 38.5rem;
+  border-radius: 10px;
+}
+
+/* line 331, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias li .box-video {
+  height: 21.5rem;
+  border-radius: 10px 10px 0 0;
+  background-color: red;
+  overflow: hidden;
+}
+
+/* line 336, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias li .box-video video {
+  width: 100%;
+}
+
+/* line 341, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias li .titulo-video {
+  text-align: center;
+  background-color: white;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+/* line 346, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram .container .videos-historias li .titulo-video h5 {
+  line-height: inherit;
+}
+
+/* line 355, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog {
+  background-color: #f7f7f7;
+}
+
+/* line 357, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 362, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container .titulo-link {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 366, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container .titulo-link .titulo {
+  max-width: 90rem;
+}
+
+/* line 371, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 374, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul li {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 28rem;
+  height: 40rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 382, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul li .img-noticia {
+  height: 18rem;
+  overflow: hidden;
+}
+
+/* line 386, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul li .corpo-card-post {
+  padding: 2rem;
+}
+
+/* line 388, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul li .corpo-card-post h5 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* line 392, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog .container ul li .corpo-card-post p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* line 405, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna {
+  border-top: 5px solid #23cbcb;
+  margin-top: 10rem;
+  background: linear-gradient(102.53deg, #012D72 13.3%, #202889 47.04%, #23cbcb 124.98%);
+  background-image: url("/img/bg-banner-sobre.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* line 416, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 34rem;
+}
+
+/* line 420, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna .text {
+  width: 100%;
+  max-width: 58.5rem;
+}
+
+/* line 424, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna .text span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+/* line 431, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna .text h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+/* line 438, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-hero-interna .text .intro-1 {
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 1.4rem;
+}
+
+/* line 448, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 453, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+/* line 457, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li {
+  max-width: 59rem;
+  height: 25rem;
+  margin-bottom: 3rem;
+  background-color: #70738A;
+  padding: 3.5rem;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 458, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+/* line 470, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li .icon {
+  margin-bottom: 1.5rem;
+}
+
+/* line 472, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li .icon img {
+  border-bottom: 2px solid #ff9539;
+  padding-bottom: 1.6rem;
+}
+
+/* line 477, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li h4 {
+  margin-bottom: 1.5rem;
+}
+
+/* line 480, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-missao .container .cards-solucoes ul li p {
+  line-height: 150%;
+  font-size: 1.6rem;
+  color: #f7f7f7;
+}
+
+/* line 492, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito, .s-nosso-objetivo {
+  padding-top: 7rem;
+}
+
+/* line 494, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito .container, .s-nosso-objetivo .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 497, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito .container .video-institucional video, .s-nosso-objetivo .container .video-institucional video {
+  width: 57rem;
+  height: 38rem;
+  border-radius: 20px;
+}
+
+/* line 503, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito .container .texto-institucional, .s-nosso-objetivo .container .texto-institucional {
+  padding-bottom: 7rem;
+}
+
+/* line 506, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito .container .texto-institucional .text, .s-nosso-objetivo .container .texto-institucional .text {
+  width: 100%;
+  max-width: 55rem;
+  margin-bottom: 2.8rem;
+}
+
+/* line 510, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-origem-microcredito .container .texto-institucional .text p, .s-nosso-objetivo .container .texto-institucional .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #627185;
+  margin-bottom: 2.4rem;
+}
+
+/* line 523, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo {
+  background-color: #70738A;
+}
+
+/* line 525, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 530, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 533, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li {
+  width: 38.5rem;
+  margin-bottom: 3rem;
+}
+
+/* line 534, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+/* line 540, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li .icon {
+  margin-bottom: 1.5rem;
+}
+
+/* line 542, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li .icon img {
+  border-bottom: 2px solid #ff9539;
+  padding-bottom: 1.6rem;
+}
+
+/* line 547, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li h4 {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* line 551, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-conselho-administrativo .container .cards-solucoes1 ul li p {
+  line-height: 150%;
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  margin-bottom: 1rem;
+}
+
+/* line 566, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucao-interna {
+  padding-top: 7rem;
+}
+
+/* line 568, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucao-interna .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 570, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucao-interna .container .texto-institucional {
+  padding-bottom: 7rem;
+}
+
+/* line 573, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucao-interna .container .texto-institucional .text {
+  width: 100%;
+  max-width: 55rem;
+  margin-bottom: 2.8rem;
+}
+
+/* line 577, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-solucao-interna .container .texto-institucional .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #627185;
+  margin-bottom: 2.4rem;
+}
+
+/* line 593, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 598, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+/* line 602, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li {
+  max-width: 38.5rem;
+  height: 25rem;
+  margin-bottom: 3rem;
+  background-color: #f7f7f7;
+  padding: 3.5rem;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 603, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+/* line 615, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li .icon {
+  margin-bottom: 1.5rem;
+}
+
+/* line 617, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li .icon img {
+  border-bottom: 2px solid #ff9539;
+  padding-bottom: 1.6rem;
+}
+
+/* line 622, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li h4 {
+  margin-bottom: 1.5rem;
+}
+
+/* line 625, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-vantagens .container .cards-solucoes2 ul li p {
+  line-height: 150%;
+  font-size: 1.6rem;
+  color: #70738A;
+}
+
+/* line 640, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+}
+
+/* line 643, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* line 647, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li {
+  width: 100%;
+  max-width: 28rem;
+  height: 40rem;
+  border-radius: 10px;
+  border: solid 1px #f7f7f7;
+  overflow: hidden;
+}
+
+/* line 648, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li:not(:nth-child(4n)) {
+  margin-right: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* line 659, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li .img-noticia {
+  height: 18rem;
+  overflow: hidden;
+}
+
+/* line 663, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li .corpo-card-post {
+  padding: 2rem;
+}
+
+/* line 665, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li .corpo-card-post h5 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* line 669, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-blog-interna .container ul li .corpo-card-post p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* line 685, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container {
+  padding-top: 9.6rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 689, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container .post-content {
+  width: 100%;
+  max-width: 85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 693, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container .post-content .image-post {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* line 697, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container .post-content .image-post img {
+  width: 100%;
+  height: 40rem;
+}
+
+/* line 702, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container .post-content .title-post {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* line 706, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-post-interno .container .post-content .date-post {
+  margin-bottom: 2rem;
+}
+
+/* line 716, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-frase-inicial {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+/* line 722, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram-interno .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 725, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram-interno .container .video-institucional video {
+  width: 57rem;
+  height: 38rem;
+  border-radius: 20px;
+}
+
+/* line 731, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram-interno .container .texto-institucional {
+  padding-bottom: 7rem;
+}
+
+/* line 734, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram-interno .container .texto-institucional .text {
+  width: 100%;
+  max-width: 55rem;
+  margin-bottom: 2.8rem;
+}
+
+/* line 738, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-historias-que-inspiram-interno .container .texto-institucional .text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #627185;
+  margin-bottom: 2.4rem;
+}
+
+/* line 753, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+/* line 757, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades .container .nome-estado {
+  margin-bottom: 3rem;
+}
+
+/* line 760, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades .container .cards-cidades {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 763, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades .container .cards-cidades .card-cidade-individual {
+  width: 100%;
+  max-width: 38.5rem;
+  height: 18rem;
+  background-color: #f7f7f7;
+  margin-bottom: 2.5rem;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+/* line 771, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades .container .cards-cidades .card-cidade-individual .nome-cidade {
+  margin-bottom: 1.5rem;
+}
+
+/* line 773, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-cards-cidades .container .cards-cidades .card-cidade-individual .nome-cidade h3 {
+  font-size: 2rem;
+}
+
+/* line 784, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+/* line 787, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* line 789, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container .text {
+  width: 100%;
+  max-width: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 794, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container .title {
+  margin-bottom: 6rem;
+}
+
+/* line 797, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container .card-atendimento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+/* line 803, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container .card-atendimento .icon {
+  padding: 3rem;
+}
+
+/* line 807, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.s-entre-em-contato .container .encontre-a-crecerto {
+  margin-top: 6rem;
+}
+
+/* line 815, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all .3s;
+  pointer-events: none;
+}
+
+/* line 826, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* line 835, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal .box {
+  position: relative;
+  z-index: 201;
+  width: 94rem;
+  height: 53rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  transform: translateY(20px);
+  transition: transform .3s;
+}
+
+/* line 846, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal .box .close {
+  position: absolute;
+  top: -51px;
+  right: 0;
+  width: 10rem;
+  height: 4rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+
+/* line 858, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* line 861, ../../../../../servidorlocal/htdocs/crecerto_wp/wp-content/themes/crecerto_theme/scss/_home.scss */
+.modal.active .box {
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=main.css.map */

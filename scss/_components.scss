@@ -1,0 +1,135 @@
+.primary-title {
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 112%;
+  /* or 45px */
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  margin-top: 1.4rem;
+  color: $primary;
+}
+
+.sub-titulo {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $yellow;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $secondary-font;
+}
+
+.title-h1 {
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.filtro-busca {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    color: $primary;
+    margin-bottom: 2rem;
+  }
+  ul {
+    .filter-button {
+      margin-bottom: 2rem;
+      .btn-filtro {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: transparent;
+        font-size: 13.5px;
+        color: #909090;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        .circle {
+          width: 100%;
+          max-width: 1.4rem;
+          height: 1.4rem;
+          background: transparent;
+          border-radius: 100%;
+          border: 2px solid #0066ff;
+        }
+      }
+      .btn-filtro.active-filtro {
+        font-weight: 600;
+        color: #1d2327;
+        transition: all 0.5s ease;
+        .circle {
+          background-color: #0066ff;
+        }
+      }
+    }
+  }
+
+  @include responsive(430px) {
+    ul {
+      .filter-button {
+        .btn-filtro {
+          font-size: 12.5px;
+        }
+      }
+    }
+  }
+}
+
+//GLOSSARIO STYLE
+.enwp-menu-letras-alfabeto {
+  gap: 10px;
+  li {
+    a {
+      font-size: 1.6rem !important;
+      font-weight: 600;
+      color: #1d295b !important;
+    }
+  }
+}
+
+.enwp-card-body {
+  padding: 0 !important;
+}
+
+.enwp-list-grid {
+  margin: 10px 0px 15px 15px !important;
+}
+.col-md-4 {
+  margin-bottom: 1rem !important;
+}
+.mb-3 {
+  height: 100% !important;
+}
+.card-body {
+  background: #f2f2fa;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.enwp-card-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  background: #1d295b;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.enwp-lista-titulo {
+  a {
+    color: #1d295b !important;
+    font-size: 13px !important;
+  }
+}
+
+.enwp-glossario-buttom {
+  margin-left: 1rem;
+}

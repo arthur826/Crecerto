@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "components.css",
+	"sources": [
+		"../scss/components.scss"
+	],
+	"sourcesContent": [
+		"\r\n.primary-title {\r\n    font-family: 'Exo', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 700;\r\n    font-size: 40px;\r\n    line-height: 112%;\r\n    /* or 45px */\r\n    letter-spacing: -1px;\r\n    margin-bottom: 2.4rem;\r\n    margin-top: 1.4rem;\r\n}\r\n\r\n.sub-titulo {\r\n    margin-bottom: 12px;\r\n    text-transform: uppercase;\r\n    letter-spacing: 3px;\r\n    font: 600 0.938rem/16px \"Exo\";\r\n    background-image: -o-linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);\r\n    background-image: linear-gradient(102.53deg, #012D72 13.3%, #5F3CA1 47.04%, #00D7D7 124.98%);\r\n    color: transparent;\r\n    -webkit-background-clip: text;\r\n    background-clip: text;\r\n    font-size: 1.4rem;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AACA,AAAA,cAAc,CAAC;EACX,WAAW,EAAE,iBAAiB;EAC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,aAAa;EACb,cAAc,EAAE,IAAI;EACpB,aAAa,EAAE,MAAM;EACrB,UAAU,EAAE,MAAM;CACrB;;;AAED,AAAA,WAAW,CAAC;EACR,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,SAAS;EACzB,cAAc,EAAE,GAAG;EACnB,IAAI,EAAE,uBAAuB;EAC7B,gBAAgB,EAAE,6EAA6E;EAC/F,gBAAgB,EAAE,0EAA0E;EAC5F,KAAK,EAAE,WAAW;EAClB,uBAAuB,EAAE,IAAI;EAC7B,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,MAAM;CACpB"
+}

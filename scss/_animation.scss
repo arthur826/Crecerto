@@ -1,0 +1,63 @@
+@keyframes Spawn {
+    0% {
+      transform: translateX(15%);
+      opacity: 0;
+    } 
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+
+@keyframes SpwanTwo {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  } 
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes searchSpwan {
+  0% {
+    top: 3rem;
+    opacity: 0;
+  }
+  100% {
+    top: 13rem;
+    opacity: 1;
+  }
+}
+
+@keyframes searchSpwanInvert {
+  0% {
+    top: 13rem;
+    opacity: 1;
+  }
+  100% {
+    top: 3rem;
+    opacity: 0;
+  }
+}
+
+  
+@keyframes headerBG {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background: transparent
+  }
+}
+  
+
+@keyframes headerBGTwo {
+  0% {
+    background: transparent 
+  }
+  100% {
+    background-color: #fff;
+  }
+}

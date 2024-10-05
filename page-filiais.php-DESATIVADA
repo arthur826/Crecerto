@@ -1,0 +1,78 @@
+
+<!--<?php 
+    //Template name: Filiais
+?>
+
+<?php get_header(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  
+
+
+    <section class="s-hero-interna">
+        <div class="overlay">
+        <div class="container">
+            <div class="text">
+                <p class="intro-1">Unidades de Atendimento</p>
+                <h2>Encontre a Crecerto mais perto de você</h2>
+                <div class="icon">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/arrow-small-down.svg" alt="icone-linhas-de-crédito">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="s-agencias">
+        <div class="container">
+            <h2>Unidades de Atendimento</h2>
+            <p>Veja abaixo todos os endereços e formas de contato das nossas unidades de atendimento, divididas por estado.</p>
+        </div>
+    </div>
+
+    <?php include(TEMPLATEPATH .'/includes/session-mapa-interno.php') ?>
+
+
+    <?php if( have_rows('repeater_filiais') ): while ( have_rows('repeater_filiais') ) : the_row(); ?>
+        <section class="s-cards-cidades">
+            <div class="container">
+                <div class="nome-estado">
+                    <h2><?php the_sub_field('nome_estado'); ?></h2>
+                </div>
+                <div class="cards-cidades">
+                <?php if( have_rows('repeater_cidade') ): while ( have_rows('repeater_cidade') ) : the_row(); ?>
+                    <div class="card-cidade-individual">
+                        <div class="topo-card">
+                            <div class="icon-tipo-filial">
+                            <?php if (get_sub_field('tipo_de_unidade') == 1) : ?>
+                                <img src="<?php echo get_template_directory_uri() ?>/img/icon-filial.png" alt="icone-linhas-de-crédito">
+                                <?php elseif (get_sub_field('tipo_de_unidade') == 2) : ?>
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/icon-terceiro.png" alt="icone-linhas-de-crédito"> 
+                                <?php elseif (get_sub_field('tipo_de_unidade') == 3) : ?>
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/icon-matriz.png" alt="icone-linhas-de-crédito"> 
+                                <?php else : ?>
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/icon-home-office.png" alt="icone-linhas-de-crédito"> 
+                            
+                            
+
+                            </div>
+                            <div class="nome-cidade">
+                                <h3><?php the_sub_field('nome_cidade'); ?></h3>
+                            </div>
+                        </div>
+                        
+                        <div class="card-text">
+                            <p><?php the_sub_field('informacoes_cidade');?>
+                            </p>
+                        </div>
+                    </div>
+                    <?php endwhile; else : endif;?>
+            </div>
+        </section>
+    <?php endwhile; else : endif;?>
+
+    <?php endwhile; else: endif; ?>
+
+
+
+<?php get_footer() ?>-->
